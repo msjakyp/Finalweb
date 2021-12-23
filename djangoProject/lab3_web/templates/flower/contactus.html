@@ -1,0 +1,35 @@
+{% extends 'flower/main.html' %}
+{% load static %}
+{% block container %}
+    <div class="header-image">
+        <img src={% static 'images/loc.png'%}>
+        <div class="contText">
+            <h5 class="t1"> Вы можете связаться с нами по номеру:
+                <p>+7-777-777-77-77</p>
+                <p>Или перейдите по ссылкам ниже </p></h5>
+        </div>
+    </div>
+
+    <div class = "contactus" >
+        <div class="contacus1">
+            <a href="tel:87079933565"> <img src={% static 'images/tel.jpg'%} class="contImg"> </a>
+        </div>
+
+        <div class="contacus1">
+            <a href="https://api.whatsapp.com/send?phone=87079933565"> <img src={% static 'images/WhatsApp.svg.png'%} class="contImg"> </a>
+        </div>
+
+        <div class="contacus1">
+            <a href="https://www.instagram.com/iitu_kz/?hl=ru"><img src={% static 'images/fe4ffb7e-7e00-4514-972a-4746cc8f2841.jfif'%} class="contImg"></a>
+        </div>
+    </div>
+
+    <hr   size="1" color="grey">
+
+    <div>
+        <a href="https://yandex.kz/maps/162/almaty/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;"></a>
+        <a href="https://yandex.kz/maps/162/almaty/?from=api-maps&ll=76.909832%2C43.234895&mode=usermaps&origin=jsapi_2_1_76&um=constructor%3Adf7d0e33cc9fdd1d8c14e663fd3b891814bd21d32506552494de3083ed79c22f&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee; font-size:12px; position:absolute; top:14px;"></a>
+        <iframe src="https://yandex.kz/map-widget/v1/-/CWs6BLZG"
+                width="940" height="300" frameborder="1" allowfullscreen="true" style="position:relative; margin-top: 20px;"></iframe>
+    </div>
+{% endblock container %}

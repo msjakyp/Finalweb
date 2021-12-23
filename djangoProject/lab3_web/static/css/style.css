@@ -1,0 +1,318 @@
+*{
+	box-sizing: border-box;             /*учитывает границы и внутренние отступы в значениях */
+}
+
+.content{
+	width: 70%;                          /*ширина элемента */
+	margin:0px auto;                     /*центрирование: ширина отступа 0 */
+}
+
+.header{
+	display: flex;                       /*делим Хедер на 2 горизонтально */
+	justify-content: space-between;      /*одинаковое расстояние между блоками */
+	align-items: center;                 /* выравнивает флекс-элементы внутри контейнерa */
+	padding-top: 10px;                   /*от верхнего края */
+	padding-bottom: 10px;                /*от нижнего края */
+	border-bottom: 1px crimson;       /* нижняя граница элемента */
+}
+
+.header img{
+	width: 150px;                         /*ширина элемента */
+}
+
+.menu ul{
+	display: flex;                      /*делим на 2 горизонтально */
+	list-style: none;                   /* маркер элемента */
+	padding-left: 0px;                  /*от левого края рамки */
+
+}
+
+.header ul li{
+	margin-left: 60px;                   /* расстояние между элементами меню */
+}
+
+.header ul li a{
+	color: #c154c1;                        /*цвет */
+	text-decoration: none;                /*убираем перечеркивание */
+	font-size: 15px;                      /*размер шрифта*/
+	font-family: "moonspace";               /*шрифт */
+
+}
+
+.header ul li a:hover{
+	color: seagreen;                         /*наводишь мышью */
+}
+
+.header-image{
+	border-top: 1px solid gray ;
+	border-bottom: 1px solid gray;     /* нижняя граница элемента */
+	position: relative;                /* Положение элемента устанавливается относительно его исходного места */
+
+}
+
+.header-image img{
+	width: 100%;                        /*ширина элемента */
+	margin: 20px 0px;                   /*верхний и левый отступы */
+}
+
+.header-imageText{
+	background-color: transparent;            /*фон элемента */
+	position: absolute;                 /*абсолютно позиционирован */
+	bottom: 3%;                        /*с низу */
+	left: 3%;                           /*с лева */
+	display: flex;                      /*делим на 2 горизонтально */
+	font-size: 16px;                    /*размер шрифта*/
+
+}
+
+.text1{
+	margin-left: 40px;                 /*расстояние между элементами */
+	color: rebeccapurple;                     /*цвет */
+	font-size: 30px;
+	font-family: monospace;
+}
+
+.portfolio {
+	/* border-bottom: 1px solid #c9c8c7;  */    /*граница */
+}
+
+.our_portfolio{
+	display: flex;                          /*делим по гор */
+	align-items: center;                    /*выравнивает флекс-элементы внутри контейнерa */
+}
+
+.our_portfolio h1{
+	font-size: 20px;                        /* размер*/
+	margin-left: 10px;                      /* отступ с лева*/
+}
+
+.portfolio_imgs{
+	display: flex;                         /*делим */
+	justify-content: space-between;        /*одинаковое расстояние между блоками */
+}
+
+.image_cont{
+
+	position: relative;             /*Положение элемента устанавливается относительно его исходного места */
+	margin-bottom: 30px;            /*граница */
+}
+
+.image_cont p{
+	text-align: center;
+	background-color: white;    /* фон цвет */
+	color: #c154c1;
+	font-size: 20px;
+}
+
+.view{
+	position: absolute;
+	bottom: 90px;                   /* c низа */
+	right: 20px;                    /* с лева */
+	background-color: whitesmoke;    /* фон цвет */
+	color: #c154c1;                /* цвет */
+	padding: 5px;                /* отступы */
+}
+
+.view:hover{                     /*наводить курсор */
+	color: black;
+	background-color: transparent;
+}
+
+.names{
+	position: absolute;
+	margin-left: 30px;
+	background-color: whitesmoke;    /* фон цвет */
+	color: #c154c1;                /* цвет */
+	padding: 5px;                /* отступы */
+}
+
+.updates{
+	padding: 20px 0px;
+	display: flex;
+}
+
+.blog_upd{
+	width: 70%;
+}
+
+.blog_upd p{
+	margin: 0px;
+	margin-top: 20px;
+}
+
+.blog_upd_name{
+	display: flex;
+	align-items: center;
+}
+
+.blog_upd_name h1{
+	font-size: 15px;
+	margin-left: 10px;
+}
+
+.social_net_img{
+	display: flex;
+	margin-top: 20px;
+}
+
+.sns_Img{
+	border-radius:35px;
+	margin-left: 20px;
+	height: 35px;
+}
+
+footer{
+	width: 100%;
+	height: 280px;
+	background-color: #f3d6ff;
+}
+
+.footer_content{
+	width: 70%;
+	height: 100%;
+	margin: 0px auto;
+	display: flex;
+	justify-content: space-between;   /*одинаковое расстояние между блоками */
+	align-items: center;
+}
+
+.Text{
+	display: flex;            /*делим*/
+	flex-direction: column;
+}
+
+
+.Text p{
+	margin:10px 0px 0px 0px;
+}
+
+.ul{
+	margin: 0px;
+}
+
+.ul{
+	display: flex;
+	list-style: none;
+	padding: 0px;
+}
+
+.ul li{
+	border-right: 1px solid #5d5d5d;
+	margin-right: 10px;
+	padding-right: 5px;
+}
+
+.ul li a{
+	text-decoration: none;
+	color: #5d5d5d;
+}
+
+.container {
+	position: relative;
+	width: 100%;                        /*ширина элемента */
+	margin: 20px 0px;
+}
+
+.container {
+	position: relative;
+	z-index: 1;
+	background: #f3d6ff;
+	max-width: 360px;
+	margin: 0 auto 100px;
+	margin-top: 45px;
+	margin-bottom: 45px;
+	padding: 30px;
+	text-align: center;
+	box-shadow: 5px 0 30px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+	/*см по ширине, по высоте радиус размытия, растяжение, цвет */
+}
+
+.container button {
+	font-family: "Roboto", sans-serif;
+	text-transform: uppercase;
+	outline: 0;
+	background: #da00e9;
+	width: 100%;
+	border: 0;
+	padding: 15px;
+	color: #FFFFFF;
+	transition: 0.3s;
+	font-size: 14px;
+	cursor: pointer;
+}
+
+.container button:hover,.container button:active,.container button:focus {
+	background: #5e0064;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.contactus{
+	display: flex;                         /*делим */
+	justify-content: space-between;        /*одинаковое расстояние между блоками */
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.contactus1{
+	position: relative;             /*Положение элемента устанавливается относительно его исходного места */
+	margin-bottom: 20px;            /*граница */
+
+}
+
+.contImg{
+	width: 30%;
+	height: 100%;
+	margin: 0 auto;
+	margin-left: 120px;
+}
+
+.contText{
+	position: absolute;                 /*абсолютно позиционирован */
+	bottom: 20%;                        /*с низу */
+	left: 3%;                           /*с лева */
+	display: flex;                      /*делим на 2 горизонтально */
+	font-size: 16px;                    /*размер шрифта*/
+}
+
+.t1{
+	color:#c154c1;                       /*цвет  */
+	font-size: 20px ;
+	font-family: cursive;
+}
+
+.payment{
+	position: relative;
+	z-index: 1;
+	background: #f3d6ff;
+	max-width: 90%;
+	margin: 0 auto 100px;
+	margin-top: 45px;
+	margin-bottom: 45px;
+	padding: 30px;
+	text-align: center;
+	box-shadow: 5px 0 30px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.container a,.container a:hover, .container a:visited,.container a:active,.container a:focus {
+	background: #e53ff5;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.ph_det img{
+	width: 33%;
+	height: 33%;
+}
+
+.portfolio a,.portfolio a:hover, .portfolio a:visited,.portfolio a:active,.portfolio a:focus {
+	background: #e53ff5;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+.modal-footer a, .modal-footer a:hover, .modal-footer a:visited,.modal-footer a:active,.modal-footer a:focus{
+	background: #e53ff5;
+	color: #FFFFFF;
+	text-decoration: none;
+}

@@ -1,0 +1,12 @@
+{% extends 'flower/main.html' %}
+{% load static %}
+{% block container %}
+    <div class="container">
+        <div class="ph_det"> <img src='{{ flower.picture.url }}'></div><br>
+        <p> {{ flower.title }}</p>
+        <p> {{ flower.price }}</p>
+        <a href="{% url 'del_art' flower.id %}" class="btn btn-link">Delete</a>
+        <a href="{% url 'update_art' flower.id %}" class="btn btn-link">Update</a>
+    </div>
+{% endblock container %}
+

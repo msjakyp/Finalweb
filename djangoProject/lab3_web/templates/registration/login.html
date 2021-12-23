@@ -1,0 +1,18 @@
+{% extends 'flower/main.html' %}
+{% load static %}
+{% load crispy_forms_tags %}
+{% block container %}
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6 mx-auto">
+                <form method="POST">
+                    <h2> Login </h2>
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <p>Don't have account yet? Click <a href="/registr"> here</a> to register</p>
+                    <button class="btn btn-link">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock container %}

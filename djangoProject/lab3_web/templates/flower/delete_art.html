@@ -1,0 +1,12 @@
+{% extends 'flower/main.html' %}
+{% load static %}
+{% block container %}
+    <form enctype="multipart/form-data" method="post">
+        {% csrf_token %}
+        {{ form.title }}<br>
+        {{ form.picture }}<br>
+        {{ form.price }}<br>
+        <span> {{ error }} </span><br>
+        <button class="btn btn-dark" type="submit">Delete product</button>
+    </form>
+{% endblock container %}
